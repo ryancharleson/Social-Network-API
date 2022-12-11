@@ -8,7 +8,7 @@ const {
     deleteThought,
     createReaction,
     deleteReaction,
-} = require('../../controllers/thoughtController');
+} = require('../../controllers/throughtController');
 
 router.route('/').get(getThought).post(createThought);
 router.route('/:id').get(getSingleThought).delete(deleteThought).put(updateThought);
